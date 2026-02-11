@@ -24,7 +24,7 @@ export default function Home() {
     },
     order: "descending",
   }, {
-    refetchInterval: 10000,
+    refetchInterval: 3000,
   });
 
   const pools = events?.data

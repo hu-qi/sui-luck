@@ -72,7 +72,10 @@ export default function CreateDraw() {
           onSuccess: (result) => {
             toast.success("馬到功成！活動已發佈", { id: toastId });
             queryClient.invalidateQueries({ queryKey: ["sui-client", "queryEvents"] });
-            router.push("/");
+            // Add a small delay for indexing
+            setTimeout(() => {
+              router.push("/");
+            }, 2000);
           },
           onError: (error) => {
             toast.error(`啟動失敗: ${error.message}`, { id: toastId });

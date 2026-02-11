@@ -38,7 +38,7 @@ export function CasinoAd() {
 
         {/* Ad Body (Share to X) */}
         <a 
-          href={`https://x.com/intent/tweet?text=${encodeURIComponent("🧧 我在 #Sui 鏈上金馬賭場領到了新年好運！💧全鏈上公平抽獎，馬到功成！🐴✨ 快來跟我一起參與 Sui New Year Draw 吧！")}&url=${encodeURIComponent("https://sui-luck.vercel.app")}&hashtags=Sui,YearOfGoldenHorse,VibeSui`}
+          href={`https://x.com/intent/tweet?text=${encodeURIComponent("🧧 我在 #Sui 鏈上金馬賭場領到了新年好運！💧全鏈上公平抽獎，馬到功成！🐴✨ 快來跟我一起參與 Sui New Year Draw 吧！@SuiNetwork @deepsurgexyz @SuiNetworkCN @wangtxxl")}&url=${encodeURIComponent("https://sui-luck.vercel.app")}&hashtags=Sui,deepsurge2026,VibeSui`}
           target="_blank" 
           rel="noopener noreferrer"
           className="relative aspect-[4/5] w-full block cursor-pointer"
