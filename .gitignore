@@ -29,3 +29,5 @@ yarn-error.log*
 *.pem
 deploy_output.json
 create_pool_output.txt
+.vercel
+.env*.local

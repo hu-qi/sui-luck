@@ -28,7 +28,7 @@ export function ReplayPanel({ poolId, isDrawn }: ReplayPanelProps) {
     e.type.includes("WinnerDrawn") && e.parsedJson.pool_id === poolId
   );
 
-  const resultId = winnerEvent?.parsedJson?.result_id;
+  const resultId = (winnerEvent?.parsedJson as any)?.result_id;
 
   const { data: resultObject } = useSuiClientQuery("getObject", {
     id: resultId || "",

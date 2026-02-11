@@ -56,7 +56,7 @@ export function PoolCard({ pool }: PoolCardProps) {
   });
 
   const winnerEvent = winnerEvents?.data.find((e: any) => e.parsedJson.pool_id === pool.poolId && e.type.includes("WinnerDrawn"));
-  const winner = winnerEvent?.parsedJson?.winner;
+  const winner = (winnerEvent?.parsedJson as any)?.winner;
 
   const myTickets = account 
     ? participants.filter(p => p.toLowerCase() === account.address.toLowerCase()).length 
