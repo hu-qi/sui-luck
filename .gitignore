@@ -1,0 +1,31 @@
+# dependencies
+node_modules/
+
+# Sui contract
+/contract/build/
+/contract/new_year_draw/
+/contract/Move.lock
+
+# frontend next.js
+/frontend/.next/
+/frontend/out/
+/frontend/build/
+/frontend/.vercel
+/frontend/next-env.d.ts
+
+# env files
+.env
+.env.*
+!.env.example
+
+# logs
+npm-debug.log*
+yarn-debug.log*
+yarn-error.log*
+*.log
+
+# misc
+.DS_Store
+*.pem
+deploy_output.json
+create_pool_output.txt
