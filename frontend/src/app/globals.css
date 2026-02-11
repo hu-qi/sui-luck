@@ -1,0 +1,49 @@
+@import "tailwindcss";
+
+@theme {
+  --color-casino-red: #8a0000;
+  --color-casino-gold: #FFD700;
+  --color-casino-yellow: #FFFF00;
+  
+  --animate-flash: flash 1s infinite;
+  @keyframes flash {
+    0%, 100% { opacity: 1; }
+    50% { opacity: 0.5; }
+  }
+  
+  --animate-shimmer: shimmer 2s linear infinite;
+  @keyframes shimmer {
+    0% { background-position: -200% 0; }
+    100% { background-position: 200% 0; }
+  }
+}
+
+:root {
+  --background: #1a0000; /* Deep Red/Black */
+  --foreground: #FFD700; /* Gold Text */
+}
+
+body {
+  background: var(--background);
+  color: var(--foreground);
+  font-family: "Times New Roman", serif; /* Classic Casino Font */
+  overflow-x: hidden;
+  background-image: url('https://www.transparenttextures.com/patterns/cubes.png'); /* Subtle pattern */
+}
+
+/* Gold Gradient Text */
+.text-gold-gradient {
+  background: linear-gradient(180deg, #FFFF00 0%, #FFD700 50%, #B8860B 100%);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  text-shadow: 0 2px 4px rgba(0,0,0,0.5);
+}
+
+@keyframes shine {
+  0% { transform: translateX(-100%); }
+  100% { transform: translateX(100%); }
+}
+
+.animate-shine {
+  animation: shine 1s ease-in-out;
+}
