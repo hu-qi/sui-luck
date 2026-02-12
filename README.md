@@ -86,6 +86,13 @@ Following the **Sui Community Activity Infrastructure** PRD, the project models 
 
 "馬到功成" (Success with the arrival of the horse). This dApp is a gift to the Sui community for the 2026 festive season.
 
+## 🤖 AI Usage Disclosure
+
+This project was developed with the assistance of the AI programming assistant **antigravity** (based on the Claude model).
+
+To ensure full transparency, all key prompts used during development, along with model version information, have been documented and disclosed here:
+👉 **[AI Prompts Log (docs/ai-prompts.md)](docs/ai-prompts.md)**
+
 ---
 
 Built with ❤️ for the Sui Ecosystem.
